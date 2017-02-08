@@ -10,12 +10,12 @@
 #   http://dev.mysql.com/doc/refman/5.7/en/old-client.html
 #
 default: &default
-  adapter: postgres
+  adapter: mysql2
   encoding: utf8
   pool: 5
-  username: deploy
-  password: password
-  # socket: /var/run/mysqld/mysqld.sock
+  username: root
+  password: intel@123
+  socket: /var/run/mysqld/mysqld.sock
 
 development:
   <<: *default
@@ -50,5 +50,5 @@ test:
 production:
   <<: *default
   database: todo_capistrono_production
-  username: deploy
-  password: password
+  username: root
+  password: intel@123
