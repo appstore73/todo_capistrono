@@ -1,0 +1,19 @@
+/.bundle
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+# Ignore Byebug command history file.
+.byebug_history
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/config/database.yml
+/config/secrets.yml
+/record
+.DS_store
+Gemfile.lock
+/.yardoc
+# Ignore RubyMine project settings
+.idea
+# Ignore keys
+.keys
